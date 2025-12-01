@@ -1,0 +1,64 @@
+{
+  "home": {
+    "welcome": "Welcome to Cybercrime Evidence Chain of Custody",
+    "description": "Select your role from the navigation bar to proceed.",
+    "newUser": "New user? Login or Signup below to continue."
+  },
+  "auth": {
+    "login": "Login",
+    "signup": "Signup",
+    "username": "Username",
+    "password": "Password",
+    "role": "Role",
+    "police": "Police",
+    "forensic": "Forensic",
+    "court": "Court",
+    "submit": "Submit"
+  },
+  "police": {
+    "title": "🚔 Police Dashboard",
+    "officerName": "Enter Officer Name",
+    "designation": "Enter Designation",
+    "generateHash": "Generate Hash",
+    "submit": "Submit",
+    "hash": "SHA-256 Hash",
+    "evidenceId": "Evidence ID",
+    "evidenceNote": "(Use this ID + same file in Forensic Dashboard)",
+    "backendResponse": "Backend Response"
+  },
+  "forensic": {
+    "title": "🧪 Forensic Dashboard",
+    "pending": "Pending Evidences",
+    "enterEvidenceId": "Enter Evidence ID",
+    "uploadFile": "Upload File",
+    "verify": "Verify Evidence",
+    "result": "Verification Result",
+    "action": "Action",
+    "fileHash": "File Hash",
+    "timestamp": "Timestamp",
+    "officerName": "Officer Name",
+    "designation": "Designation"
+  },
+  "court": {
+    "title": "⚖️ Court Dashboard",
+    "noEvidences": "No evidences found.",
+    "id": "ID",
+    "file": "File",
+    "hash": "Hash",
+    "uploadedBy": "Uploaded By",
+    "officer": "Officer",
+    "timestamp": "Timestamp"
+  },
+  "alerts": {
+    "selectFile": "Please select a file!",
+    "enterOfficerName": "Please enter officer name!",
+    "enterDesignation": "Please enter designation!",
+    "generateHashFirst": "Generate hash first!",
+    "backendNotReachable": "Cannot reach backend. Make sure server is running.",
+    "submissionSuccess": "✅ Evidence submitted! Evidence ID: {{id}}",
+    "errorSendingMetadata": "Error sending metadata to backend.",
+    "fetchError": "Could not fetch evidences from backend.",
+    "verificationFailed": "Verification failed.",
+    "verificationError": "Verification error"
+  }
+}

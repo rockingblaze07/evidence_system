@@ -1,0 +1,64 @@
+{
+  "home": {
+    "welcome": "साइबरक्राइम एविडेंस चेन ऑफ कस्टडी में आपका स्वागत है",
+    "description": "आगे बढ़ने के लिए नेविगेशन बार से अपनी भूमिका चुनें।",
+    "newUser": "नए उपयोगकर्ता? जारी रखने के लिए लॉगिन या साइनअप करें।"
+  },
+  "auth": {
+    "login": "लॉगिन",
+    "signup": "साइनअप",
+    "username": "उपयोगकर्ता नाम",
+    "password": "पासवर्ड",
+    "role": "भूमिका",
+    "police": "पुलिस",
+    "forensic": "फॉरेंसिक",
+    "court": "न्यायालय",
+    "submit": "जमा करें"
+  },
+  "police": {
+    "title": "🚔 पुलिस डैशबोर्ड",
+    "officerName": "अधिकारी का नाम दर्ज करें",
+    "designation": "पदनाम दर्ज करें",
+    "generateHash": "हैश जनरेट करें",
+    "submit": "जमा करें",
+    "hash": "SHA-256 हैश",
+    "evidenceId": "सबूत आईडी",
+    "evidenceNote": "(इस आईडी + वही फ़ाइल फॉरेंसिक डैशबोर्ड में उपयोग करें)",
+    "backendResponse": "बैकएंड प्रतिक्रिया"
+  },
+  "forensic": {
+    "title": "🧪 फॉरेंसिक डैशबोर्ड",
+    "pending": "लंबित सबूत",
+    "enterEvidenceId": "सबूत आईडी दर्ज करें",
+    "uploadFile": "फ़ाइल अपलोड करें",
+    "verify": "सबूत सत्यापित करें",
+    "result": "सत्यापन परिणाम",
+    "action": "कार्रवाई",
+    "fileHash": "फ़ाइल हैश",
+    "timestamp": "समय",
+    "officerName": "अधिकारी का नाम",
+    "designation": "पदनाम"
+  },
+  "court": {
+    "title": "⚖️ न्यायालय डैशबोर्ड",
+    "noEvidences": "कोई सबूत नहीं मिला।",
+    "id": "आईडी",
+    "file": "फ़ाइल",
+    "hash": "हैश",
+    "uploadedBy": "अपलोड करने वाला",
+    "officer": "अधिकारी",
+    "timestamp": "समय"
+  },
+  "alerts": {
+    "selectFile": "कृपया फ़ाइल चुनें!",
+    "enterOfficerName": "कृपया अधिकारी का नाम दर्ज करें!",
+    "enterDesignation": "कृपया पदनाम दर्ज करें!",
+    "generateHashFirst": "पहले हैश जनरेट करें!",
+    "backendNotReachable": "बैकएंड तक नहीं पहुंच सकते। सुनिश्चित करें कि सर्वर चल रहा है।",
+    "submissionSuccess": "✅ सबूत जमा हो गया! सबूत आईडी: {{id}}",
+    "errorSendingMetadata": "बैकएंड पर डेटा भेजने में त्रुटि।",
+    "fetchError": "बैकएंड से सबूत प्राप्त नहीं कर सके।",
+    "verificationFailed": "सत्यापन विफल हुआ।",
+    "verificationError": "सत्यापन त्रुटि"
+  }
+}
