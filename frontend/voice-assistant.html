@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Voice Assistant</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="blurry-shape"></div>
+
+<div class="app">
+
+    <div id="navbar"></div>
+
+    <main class="dashboard-container">
+
+        <div class="panel voice-panel">
+
+            <h2>🎤 AI Voice Assistant</h2>
+
+            <input
+                type="file"
+                id="audioFile"
+                accept="audio/*"
+            >
+
+            <button
+                id="verifyVoiceButton"
+                class="blue-button">
+                Verify Voice
+            </button>
+
+            <div id="voiceError"
+                 class="error-message">
+            </div>
+
+            <div id="voiceResult"
+                 class="voice-result hidden">
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/i18n.js"></script>
+<script src="js/common.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/voice.js"></script>
+
+</body>
+
+</html>

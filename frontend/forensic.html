@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forensic Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="blurry-shape"></div>
+
+<div class="app">
+
+    <div id="navbar"></div>
+
+    <main class="dashboard-container">
+
+        <div class="panel forensic-panel">
+
+            <h2>🧪 Forensic Dashboard</h2>
+
+            <div id="pendingEvidence"
+                 class="pending-evidence">
+            </div>
+
+            <input
+                type="text"
+                id="evidenceId"
+                placeholder="Enter Evidence ID"
+            >
+
+            <input
+                type="file"
+                id="forensicFile"
+            >
+
+            <button
+                type="button"
+                id="verifyButton"
+                class="green-button">
+                Verify Evidence
+            </button>
+
+            <div id="verificationResult"
+                 class="result-box yellow-result hidden">
+            </div>
+
+            <!-- Voice Assistant remains available here,
+                 exactly like the React version -->
+
+            <div class="embedded-voice">
+
+                <h2>🎤 AI Voice Assistant</h2>
+
+                <input
+                    type="file"
+                    id="forensicAudioFile"
+                    accept="audio/*"
+                >
+
+                <button
+                    id="forensicVoiceButton"
+                    class="blue-button">
+                    Verify Voice
+                </button>
+
+                <div id="forensicVoiceResult"></div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/i18n.js"></script>
+<script src="js/common.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/forensic.js"></script>
+<script src="js/voice.js"></script>
+
+</body>
+</html>

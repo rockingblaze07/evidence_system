@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bruno+Ace&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    background: #000;
+    color: #40ff40;
+    font-family: 'Abel', sans-serif;
+    overflow-x: hidden;
+}
+
+.app {
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.blurry-shape {
+    width: 1200px;
+    height: 250px;
+    background: #40ff40;
+    filter: blur(200px);
+    border-radius: 50%;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    opacity: 0.2;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 32px;
+
+    border-bottom: 1px solid #40ff40;
+    z-index: 10;
+}
+
+.logo {
+    color: #40ff40;
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: clamp(18px, 2.2vw, 30px);
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    font-size: 20px;
+}
+
+.nav-links a {
+    color: #9aff9a;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #40ff40;
+}
+
+.logout-button {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.logout-button:hover {
+    background: #ef4444;
+}
+
+/* ================= HOME ================= */
+
+.home-container {
+    min-height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.home-panel {
+    position: relative;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    padding: 40px;
+
+    border-radius: 16px;
+
+    border: 1px solid #40ff40;
+
+    box-shadow: 0 0 20px rgba(64, 255, 64, 0.15);
+
+    text-align: center;
+
+    max-width: 850px;
+}
+
+.home-panel h2 {
+    color: #40ff40;
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.home-description,
+.new-user {
+    color: #999;
+    font-size: 14px;
+}
+
+.green-link {
+    color: #40ff40;
+}
+
+.blue-link {
+    color: #60a5fa;
+}
+
+.home-panel a:hover {
+    text-decoration: underline;
+}
+
+.language-selector {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+
+/* ================= AUTH ================= */
+
+.auth-container {
+    min-height: 75vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.auth-panel {
+    width: 350px;
+
+    background: #111;
+
+    padding: 24px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 0 20px rgba(64, 255, 64, 0.15);
+}
+
+.auth-panel h2 {
+    color: #40ff40;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.auth-panel input,
+.auth-panel select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* ================= INPUTS ================= */
+
+input,
+select,
+textarea {
+    background: #111;
+
+    color: #40ff40;
+
+    border: 1px solid #40ff40;
+
+    border-radius: 6px;
+
+    padding: 10px;
+
+    font-family: 'Abel', sans-serif;
+
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    box-shadow: 0 0 8px rgba(64, 255, 64, 0.3);
+}
+
+input::placeholder {
+    color: #777;
+}
+
+input[type="file"] {
+    color: #40ff40;
+}
+
+input[type="file"]::file-selector-button {
+    margin-right: 12px;
+
+    padding: 8px 14px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #40ff40;
+
+    color: #000;
+
+    cursor: pointer;
+
+    font-family: 'Abel', sans-serif;
+}
+
+/* ================= BUTTONS ================= */
+
+button {
+    background: #040;
+
+    color: #40ff40;
+
+    border: 1px solid #40ff40;
+
+    padding: 8px 16px;
+
+    border-radius: 6px;
+
+    font-family: 'Abel', sans-serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #40ff40;
+    color: #000;
+}
+
+.green-button {
+    background: #16a34a;
+    color: #000;
+}
+
+.green-button:hover {
+    background: #22c55e;
+}
+
+.blue-button {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+.blue-button:hover {
+    background: #3b82f6;
+    color: white;
+}
+
+/* ================= DASHBOARDS ================= */
+
+.dashboard-container {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 112px;
+
+    padding: 20px;
+}
+
+.panel {
+    background: rgba(0, 0, 0, 0.6);
+
+    border: 1px solid #40ff40;
+
+    border-radius: 16px;
+
+    padding: 24px;
+
+    width: 100%;
+
+    box-shadow: 0 0 20px rgba(64, 255, 64, 0.1);
+}
+
+.police-panel,
+.forensic-panel {
+    max-width: 600px;
+}
+
+.court-panel {
+    max-width: 850px;
+}
+
+.voice-panel {
+    max-width: 700px;
+}
+
+.panel h2 {
+    font-family: 'Bruno Ace', sans-serif;
+
+    margin-top: 0;
+
+    color: #40ff40;
+}
+
+.panel form input,
+.panel > input {
+    display: block;
+
+    width: 100%;
+
+    margin-bottom: 16px;
+}
+
+.button-group {
+    display: flex;
+    gap: 8px;
+}
+
+/* ================= RESULTS ================= */
+
+.result-box {
+    margin-top: 16px;
+
+    padding: 10px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    overflow-wrap: anywhere;
+}
+
+.green-result {
+    background: #111;
+    border: 1px solid #40ff40;
+    color: #86efac;
+}
+
+.yellow-result {
+    background: #111;
+    border: 1px solid #facc15;
+    color: #fde047;
+}
+
+.blue-result {
+    background: #111;
+    border: 1px solid #60a5fa;
+    color: #93c5fd;
+}
+
+.hidden {
+    display: none;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* ================= FORENSIC ================= */
+
+.pending-evidence {
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.pending-evidence ul {
+    padding-left: 20px;
+}
+
+.embedded-voice {
+    margin-top: 32px;
+
+    border-top: 1px solid #40ff40;
+
+    padding-top: 20px;
+}
+
+.embedded-voice input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.embedded-voice button {
+    margin-bottom: 10px;
+}
+
+/* ================= TABLE ================= */
+
+.result-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 10px;
+}
+
+.result-table th,
+.result-table td {
+    border: 1px solid #333;
+
+    padding: 8px;
+
+    text-align: left;
+
+    vertical-align: top;
+}
+
+.result-table th {
+    color: #40ff40;
+}
+
+/* ================= COURT ================= */
+
+.evidence-card {
+    background: rgba(0, 0, 0, 0.7);
+
+    border: 1px solid #40ff40;
+
+    border-radius: 6px;
+
+    padding: 16px;
+
+    margin-bottom: 16px;
+}
+
+.evidence-card p {
+    margin: 6px 0;
+
+    color: #aaa;
+}
+
+.evidence-card strong {
+    color: #40ff40;
+}
+
+/* ================= VOICE ================= */
+
+.voice-panel input {
+    width: 100%;
+
+    margin-bottom: 16px;
+}
+
+.voice-result {
+    margin-top: 16px;
+
+    padding: 16px;
+
+    border: 1px solid #40ff40;
+
+    border-radius: 6px;
+
+    color: #86efac;
+}
+
+.error-message {
+    color: #f87171;
+
+    margin-top: 10px;
+}
+
+/* ================= AUTH FOOTER ================= */
+
+.auth-footer {
+    margin-top: 16px;
+
+    text-align: center;
+
+    color: #888;
+
+    font-size: 14px;
+}
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #40ff40;
+
+    border-radius: 4px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home-panel {
+        margin: 20px;
+    }
+
+    .home-panel h2 {
+        font-size: 26px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 14px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .nav-links {
+        font-size: 16px;
+    }
+
+    .dashboard-container {
+        margin-top: 50px;
+    }
+
+    .panel {
+        padding: 16px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+}
+#selectedFileName {
+    margin-top: 10px;
+    color: #00ff88;
+    font-size: 14px;
+}
